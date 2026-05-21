@@ -65,15 +65,22 @@ class GesturePanel(Widget):
 
             emoji = GESTURE_ART.get(self.label, "·")
             bar   = _bar(self.value)
-            vbar  = _vol_bar(self.volume)
 
-            # Gesture-specific hint
+            # Volume bar — green if working, dim if unavailable
+            if self.volume >= 0:
+                vbar = _vol_bar(self.volume)
+                vol_line = f"  VOL  {vbar}"
+            else:
+                vol_line = "  VOL  [dim]install: pip install pycaw comtypes[/dim]"
+
+            # Hand Y position indicator (shows tracking is working)
             if self.label == "FIST":
-                hint = "[cyan]↑↓ move to change vol[/cyan]"
+                from tasks.gesture_actions import _y_to_volume, _Y_TOP, _Y_BOTTOM
+                hint     = "[cyan]raise/lower fist to set volume[/cyan]"
             elif self.label == "PINCH":
                 hint = "[yellow]hold 1.5s to lock 🔒[/yellow]"
             else:
-                hint = "[dim]FIST=vol  PINCH=lock[/dim]"
+                hint = "[dim]✊ FIST=vol  🤏 PINCH=lock[/dim]"
 
             lines = [
                 f" [bold cyan]GESTURE[/bold cyan]   [green]● LIVE[/green]  {be}",
@@ -81,11 +88,11 @@ class GesturePanel(Widget):
                 f"  {emoji}  [bold white]{self.label:<10}[/bold white]",
                 f"  conf [{bar}] {self.value:.2f}  {self.fps:.0f}fps",
                 "",
-                f"  VOL  {vbar}",
+                vol_line,
                 f"  {hint}",
             ]
             if self.last_action:
-                lines.append(f"  [dim]{self.last_action[-38:]}[/dim]")
+                lines.append(f"  [dim]{self.last_action[-40:]}[/dim]")
 
         else:
             err      = (self.error or "camera not opened")[:40]
