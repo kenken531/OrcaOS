@@ -1,21 +1,19 @@
 """
 OrcaOS — GestureISR
-Two-tier gesture detection:
+Two-tier gesture detection with decoupled capture + inference threads.
 
-  Tier 1 (preferred): MediaPipe Tasks API HandLandmarker
-    - Needs: pip install mediapipe==0.10.35  +  hand_landmarker.task model
-    - Works on Python 3.13+ (pure ctypes wheel, no ABI dependency)
-    - Full 21-point hand landmarks → accurate FIST/OPEN/POINT/PINCH/HOLD
+Architecture (fixes freeze-on-fist):
+  capture thread  → reads frames from camera at full speed → frame_queue
+  inference thread → drains frame_queue → MediaPipe/OpenCV → gesture_queue
 
-  Tier 2 (fallback): Pure OpenCV skin-mask + contour hull
-    - No extra deps, works everywhere, less accurate
-    - Automatically used if mediapipe/model not available
+  Separating capture from inference means MediaPipe taking longer on a fist
+  never blocks the camera read loop. The camera buffer stays fresh.
 
-Install:
-    pip install mediapipe==0.10.35
-    python download_model.py
+Tier 1: MediaPipe Tasks API  (Python 3.13+, requires hand_landmarker.task)
+Tier 2: Pure OpenCV skin mask (automatic fallback, no model needed)
 """
 import os
+import queue
 import threading
 import time
 import traceback
@@ -23,7 +21,6 @@ import math
 
 from state import gesture_queue, update_state
 
-# ── optional deps ─────────────────────────────────────────────────────────────
 try:
     import cv2
     import numpy as np
@@ -39,94 +36,105 @@ try:
 except Exception:
     _MP_OK = False
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "hand_landmarker.task")
-MODEL_PATH = os.path.normpath(MODEL_PATH)
+MODEL_PATH = os.path.normpath(
+    os.path.join(os.path.dirname(__file__), "..", "hand_landmarker.task")
+)
+
+# ── landmark indices ──────────────────────────────────────────────────────────
+_WRIST      = 0
+_THUMB_TIP  = 4;  _THUMB_MCP  = 2
+_INDEX_TIP  = 8;  _INDEX_MCP  = 5
+_MIDDLE_TIP = 12; _MIDDLE_MCP = 9
+_RING_TIP   = 16; _RING_MCP   = 13
+_PINKY_TIP  = 20; _PINKY_MCP  = 17
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-#  TIER 1 — MediaPipe Tasks API  (21 landmarks, accurate)
+#  Gesture classifier (MediaPipe 21-point landmarks)
 # ══════════════════════════════════════════════════════════════════════════════
-
-# Landmark indices (same across old + new mediapipe)
-_WRIST       = 0
-_THUMB_TIP   = 4;  _THUMB_MCP  = 2
-_INDEX_TIP   = 8;  _INDEX_MCP  = 5
-_MIDDLE_TIP  = 12; _MIDDLE_MCP = 9
-_RING_TIP    = 16; _RING_MCP   = 13
-_PINKY_TIP   = 20; _PINKY_MCP  = 17
-
 
 def _dist(a, b) -> float:
     return math.sqrt((a.x - b.x)**2 + (a.y - b.y)**2)
 
 
 def _classify_landmarks(landmarks) -> tuple:
-    """
-    Classify hand gesture from 21 MediaPipe NormalizedLandmarks.
-    Returns (label, value 0-1).
-    """
     lm = landmarks
 
-    # Is each finger extended? tip.y < pip.y (image coords: up = lower y)
-    # PIP joints: index=6, middle=10, ring=14, pinky=18
     finger_extended = [
         lm[_INDEX_TIP].y  < lm[6].y,
         lm[_MIDDLE_TIP].y < lm[10].y,
         lm[_RING_TIP].y   < lm[14].y,
         lm[_PINKY_TIP].y  < lm[18].y,
     ]
-    # Thumb: compare x instead (works for both hands)
-    thumb_extended = abs(lm[_THUMB_TIP].x - lm[_WRIST].x) > \
-                     abs(lm[_THUMB_MCP].x  - lm[_WRIST].x)
-
+    thumb_extended = (abs(lm[_THUMB_TIP].x - lm[_WRIST].x) >
+                      abs(lm[_THUMB_MCP].x  - lm[_WRIST].x))
     n_up = sum(finger_extended)
 
-    # Thumb-index pinch distance (normalised by hand size)
     hand_size  = _dist(lm[_WRIST], lm[_MIDDLE_MCP])
     pinch_dist = _dist(lm[_THUMB_TIP], lm[_INDEX_TIP])
     pinch_norm = pinch_dist / max(hand_size, 1e-6)
 
-    # ── classify ──────────────────────────────────────────────────────────────
     if n_up == 0 and not thumb_extended:
-        # all fingers + thumb down → FIST
-        # value = tightness (how close fingertips are to palm)
         tightness = 1.0 - min(_dist(lm[_MIDDLE_TIP], lm[_WRIST]) / max(hand_size, 1e-6), 1.0)
         return "FIST", round(tightness, 3)
-
     if pinch_norm < 0.25 and n_up <= 1:
-        # thumb + index close = PINCH
         return "PINCH", round(1.0 - pinch_norm / 0.25, 3)
-
     if n_up == 4:
-        # all four fingers up = OPEN (thumb doesn't matter)
-        openness = min(
-            _dist(lm[_INDEX_TIP], lm[_PINKY_TIP]) / max(hand_size * 1.5, 1e-6),
-            1.0
-        )
+        openness = min(_dist(lm[_INDEX_TIP], lm[_PINKY_TIP]) / max(hand_size * 1.5, 1e-6), 1.0)
         return "OPEN", round(openness, 3)
-
     if n_up == 1 and finger_extended[0]:
-        # only index finger → POINT
         return "POINT", 1.0
-
     if n_up == 2 and finger_extended[0] and finger_extended[1]:
-        # index + middle → PEACE / scissors
         return "PEACE", 1.0
-
     if thumb_extended and n_up == 0:
         return "THUMBS_UP", 1.0
-
-    # partial → HOLD
     return "HOLD", round(n_up / 4, 3)
 
 
+# ══════════════════════════════════════════════════════════════════════════════
+#  Capture thread — reads frames at full camera speed
+# ══════════════════════════════════════════════════════════════════════════════
+
+def _capture_loop(cap, frame_queue: queue.Queue, stop_event: threading.Event,
+                  fail_cb):
+    """
+    Reads frames from cap as fast as possible.
+    Drops old frames if inference can't keep up (maxsize=2).
+    Signals failure via fail_cb(n_consecutive_failures).
+    """
+    consecutive_fail = 0
+    while not stop_event.is_set():
+        ret, frame = cap.read()
+        if not ret or frame is None:
+            consecutive_fail += 1
+            fail_cb(consecutive_fail)
+            if consecutive_fail > 60:
+                break
+            time.sleep(0.01)
+            continue
+        consecutive_fail = 0
+        # Drop oldest frame if inference is backed up — keeps latency low
+        if frame_queue.full():
+            try:
+                frame_queue.get_nowait()
+            except queue.Empty:
+                pass
+        try:
+            frame_queue.put_nowait((time.time(), frame))
+        except queue.Full:
+            pass
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  Tier 1 — MediaPipe inference loop
+# ══════════════════════════════════════════════════════════════════════════════
+
 def _run_mediapipe(stop_event: threading.Event, cap, camera_idx: int):
-    """Main loop using MediaPipe Tasks HandLandmarker (VIDEO mode)."""
     from mediapipe.tasks.python.vision.core.vision_task_running_mode import VisionTaskRunningMode
     from mediapipe.tasks.python.vision.core.image import Image, ImageFormat
 
-    BaseOptions     = mp_base_options.BaseOptions
-    HandLandmarker  = mp_vision.HandLandmarker
+    BaseOptions           = mp_base_options.BaseOptions
+    HandLandmarker        = mp_vision.HandLandmarker
     HandLandmarkerOptions = mp_vision.HandLandmarkerOptions
 
     options = HandLandmarkerOptions(
@@ -141,39 +149,51 @@ def _run_mediapipe(stop_event: threading.Event, cap, camera_idx: int):
     update_state(gesture_active=True, gesture_error="",
                  gesture_cam_idx=camera_idx, gesture_backend="MediaPipe Tasks")
 
-    prev_time        = time.time()
-    consecutive_fail = 0
+    # Small frame queue between capture and inference (maxsize=2 = drop policy)
+    frame_queue   = queue.Queue(maxsize=2)
+    fail_count    = [0]
+    camera_failed = threading.Event()
+
+    def _fail_cb(n):
+        fail_count[0] = n
+        if n > 60:
+            camera_failed.set()
+            update_state(gesture_active=False,
+                         gesture_error="Camera stopped sending frames")
+
+    # Start capture thread
+    cap_thread = threading.Thread(
+        target=_capture_loop,
+        args=(cap, frame_queue, stop_event, _fail_cb),
+        daemon=True, name="GestureCapture"
+    )
+    cap_thread.start()
+
+    prev_time = time.time()
 
     with HandLandmarker.create_from_options(options) as landmarker:
-        while not stop_event.is_set():
-            ret, frame = cap.read()
-            if not ret or frame is None:
-                consecutive_fail += 1
-                if consecutive_fail > 60:
-                    update_state(gesture_active=False,
-                                 gesture_error="Camera stopped sending frames")
-                    break
-                time.sleep(0.033)
+        while not stop_event.is_set() and not camera_failed.is_set():
+            # Block until a frame is available, timeout to check stop_event
+            try:
+                ts, frame = frame_queue.get(timeout=0.1)
+            except queue.Empty:
                 continue
-            consecutive_fail = 0
 
             try:
-                rgb        = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                mp_image   = Image(image_format=ImageFormat.SRGB, data=rgb)
-                ts_ms      = int(time.time() * 1000)
-                result     = landmarker.detect_for_video(mp_image, ts_ms)
+                rgb      = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                mp_image = Image(image_format=ImageFormat.SRGB, data=rgb)
+                ts_ms    = int(ts * 1000)
+                result   = landmarker.detect_for_video(mp_image, ts_ms)
 
-                now        = time.time()
-                fps        = 1.0 / max(now - prev_time, 1e-6)
-                prev_time  = now
+                now       = time.time()
+                fps       = 1.0 / max(now - prev_time, 1e-6)
+                prev_time = now
 
                 if result.hand_landmarks:
                     label, value = _classify_landmarks(result.hand_landmarks[0])
-                    # wrist Y position (normalised 0=top 1=bottom) for volume control
                     hand_y = result.hand_landmarks[0][_WRIST].y
                 else:
-                    label, value = "NONE", 0.0
-                    hand_y = None
+                    label, value, hand_y = "NONE", 0.0, None
 
                 gesture_queue.put_nowait({
                     "gesture_label": label,
@@ -183,11 +203,12 @@ def _run_mediapipe(stop_event: threading.Event, cap, camera_idx: int):
                 })
             except Exception as e:
                 update_state(gesture_error=f"MP frame error: {e}")
-                continue
+
+    cap_thread.join(timeout=2.0)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-#  TIER 2 — Pure OpenCV fallback  (skin mask + convex hull)
+#  Tier 2 — OpenCV skin-mask inference loop
 # ══════════════════════════════════════════════════════════════════════════════
 
 _HSV_LOWER = (0,  20, 70)
@@ -224,38 +245,41 @@ def _count_fingers_cv(contour) -> int:
 
 def _classify_cv(n_fingers: int, area: int, hull_area: float) -> tuple:
     solidity = area / hull_area if hull_area > 0 else 0
-    if n_fingers == 0:
-        return "FIST", round(min(solidity * 1.2, 1.0), 3)
-    elif n_fingers == 1:
-        return "POINT", 1.0
-    elif n_fingers == 2:
-        return "PINCH", round(solidity, 3)
-    elif n_fingers >= 4:
-        return "OPEN", 1.0
-    else:
-        return "HOLD", round(n_fingers / 5, 3)
+    if n_fingers == 0:   return "FIST",  round(min(solidity * 1.2, 1.0), 3)
+    elif n_fingers == 1: return "POINT", 1.0
+    elif n_fingers == 2: return "PINCH", round(solidity, 3)
+    elif n_fingers >= 4: return "OPEN",  1.0
+    else:                return "HOLD",  round(n_fingers / 5, 3)
 
 
 def _run_opencv(stop_event: threading.Event, cap, camera_idx: int):
-    """Fallback loop using pure OpenCV skin detection."""
     update_state(gesture_active=True, gesture_error="",
                  gesture_cam_idx=camera_idx, gesture_backend="OpenCV skin")
 
-    kernel           = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))
-    prev_time        = time.time()
-    consecutive_fail = 0
+    frame_queue   = queue.Queue(maxsize=2)
+    camera_failed = threading.Event()
 
-    while not stop_event.is_set():
-        ret, frame = cap.read()
-        if not ret or frame is None:
-            consecutive_fail += 1
-            if consecutive_fail > 60:
-                update_state(gesture_active=False,
-                             gesture_error="Camera stopped sending frames")
-                break
-            time.sleep(0.033)
+    def _fail_cb(n):
+        if n > 60:
+            camera_failed.set()
+            update_state(gesture_active=False,
+                         gesture_error="Camera stopped sending frames")
+
+    cap_thread = threading.Thread(
+        target=_capture_loop,
+        args=(cap, frame_queue, stop_event, _fail_cb),
+        daemon=True, name="GestureCapture"
+    )
+    cap_thread.start()
+
+    kernel    = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))
+    prev_time = time.time()
+
+    while not stop_event.is_set() and not camera_failed.is_set():
+        try:
+            ts, frame = frame_queue.get(timeout=0.1)
+        except queue.Empty:
             continue
-        consecutive_fail = 0
 
         try:
             blurred  = cv2.GaussianBlur(frame, (7, 7), 0)
@@ -277,7 +301,6 @@ def _run_opencv(stop_event: threading.Event, cap, camera_idx: int):
                     hull_area  = cv2.contourArea(cv2.convexHull(hand))
                     n_fin      = _count_fingers_cv(hand)
                     label, value = _classify_cv(n_fin, area, hull_area)
-                    # centroid Y normalised to frame height
                     M          = cv2.moments(hand)
                     hand_y     = (M["m01"] / M["m00"] / frame.shape[0]
                                   if M["m00"] > 0 else None)
@@ -298,6 +321,8 @@ def _run_opencv(stop_event: threading.Event, cap, camera_idx: int):
             })
         except Exception:
             pass
+
+    cap_thread.join(timeout=2.0)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -369,12 +394,11 @@ def _gesture_loop(stop_event: threading.Event, camera_index: int = 0):
                      gesture_error="No camera found. Run: python camera_check.py")
         return
 
-    # ── pick backend ──────────────────────────────────────────────────────────
     model_exists = os.path.exists(MODEL_PATH)
     use_mp       = _MP_OK and model_exists
 
     if _MP_OK and not model_exists:
-        update_state(gesture_error=f"Model missing — run: python download_model.py  (falling back to OpenCV)")
+        update_state(gesture_error="Model missing — run: python download_model.py (falling back to OpenCV)")
 
     try:
         if use_mp:
@@ -394,8 +418,7 @@ def start(stop_event: threading.Event, camera_index: int = 0):
     t = threading.Thread(
         target=_gesture_loop,
         args=(stop_event, camera_index),
-        daemon=True,
-        name="GestureISR",
+        daemon=True, name="GestureISR"
     )
     t.start()
     return t
