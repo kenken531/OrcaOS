@@ -1,0 +1,1176 @@
+[08:34:53] VolumeWorker thread started
+[08:34:53] CoInitialize OK
+[08:34:53] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:34:53] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:34:53] COM init: ok=False  iface=False
+[08:35:10] No iface Ч attempting reinit
+[08:35:10] CoInitialize OK
+[08:35:10] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:10] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:10] Reinit failed Ч dropping set request
+[08:35:10] No iface Ч attempting reinit
+[08:35:10] CoInitialize OK
+[08:35:10] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:10] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:10] Reinit failed Ч dropping set request
+[08:35:10] No iface Ч attempting reinit
+[08:35:10] CoInitialize OK
+[08:35:10] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:10] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:10] Reinit failed Ч dropping set request
+[08:35:13] No iface Ч attempting reinit
+[08:35:13] CoInitialize OK
+[08:35:13] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:13] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:13] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:14] No iface Ч attempting reinit
+[08:35:14] CoInitialize OK
+[08:35:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:14] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:14] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:15] No iface Ч attempting reinit
+[08:35:15] CoInitialize OK
+[08:35:15] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:15] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:15] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:16] CoInitialize OK
+[08:35:16] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:16] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:16] Reinit failed Ч dropping set request
+[08:35:16] No iface Ч attempting reinit
+[08:35:17] CoInitialize OK
+[08:35:17] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:17] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:17] Reinit failed Ч dropping set request
+[08:35:17] No iface Ч attempting reinit
+[08:35:17] CoInitialize OK
+[08:35:17] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:17] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:17] Reinit failed Ч dropping set request
+[08:35:17] No iface Ч attempting reinit
+[08:35:17] CoInitialize OK
+[08:35:17] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:17] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:17] Reinit failed Ч dropping set request
+[08:35:17] No iface Ч attempting reinit
+[08:35:17] CoInitialize OK
+[08:35:17] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:17] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:17] Reinit failed Ч dropping set request
+[08:35:17] No iface Ч attempting reinit
+[08:35:17] CoInitialize OK
+[08:35:17] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:17] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:17] Reinit failed Ч dropping set request
+[08:35:17] No iface Ч attempting reinit
+[08:35:17] CoInitialize OK
+[08:35:17] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:17] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:17] Reinit failed Ч dropping set request
+[08:35:17] No iface Ч attempting reinit
+[08:35:17] CoInitialize OK
+[08:35:17] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:17] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:17] Reinit failed Ч dropping set request
+[08:35:17] No iface Ч attempting reinit
+[08:35:17] CoInitialize OK
+[08:35:17] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:17] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:17] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:18] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:18] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:18] Reinit failed Ч dropping set request
+[08:35:18] No iface Ч attempting reinit
+[08:35:18] CoInitialize OK
+[08:35:19] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:19] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:19] Reinit failed Ч dropping set request
+[08:35:19] No iface Ч attempting reinit
+[08:35:19] CoInitialize OK
+[08:35:19] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:19] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:19] Reinit failed Ч dropping set request
+[08:35:19] No iface Ч attempting reinit
+[08:35:19] CoInitialize OK
+[08:35:19] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:19] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:19] Reinit failed Ч dropping set request
+[08:35:19] No iface Ч attempting reinit
+[08:35:19] CoInitialize OK
+[08:35:19] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:19] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:19] Reinit failed Ч dropping set request
+[08:35:19] No iface Ч attempting reinit
+[08:35:19] CoInitialize OK
+[08:35:19] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:19] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:19] Reinit failed Ч dropping set request
+[08:35:26] No iface Ч attempting reinit
+[08:35:26] CoInitialize OK
+[08:35:26] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:26] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:26] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:27] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:27] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:27] Reinit failed Ч dropping set request
+[08:35:27] No iface Ч attempting reinit
+[08:35:27] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:28] No iface Ч attempting reinit
+[08:35:28] CoInitialize OK
+[08:35:28] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:28] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:28] Reinit failed Ч dropping set request
+[08:35:29] No iface Ч attempting reinit
+[08:35:29] CoInitialize OK
+[08:35:29] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:29] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:29] Reinit failed Ч dropping set request
+[08:35:30] No iface Ч attempting reinit
+[08:35:30] CoInitialize OK
+[08:35:30] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:30] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:30] Reinit failed Ч dropping set request
+[08:35:31] No iface Ч attempting reinit
+[08:35:31] CoInitialize OK
+[08:35:31] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:31] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:31] Reinit failed Ч dropping set request
+[08:35:31] No iface Ч attempting reinit
+[08:35:31] CoInitialize OK
+[08:35:31] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:31] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:31] Reinit failed Ч dropping set request
+[08:35:31] No iface Ч attempting reinit
+[08:35:31] CoInitialize OK
+[08:35:31] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:31] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:31] Reinit failed Ч dropping set request
+[08:35:31] No iface Ч attempting reinit
+[08:35:31] CoInitialize OK
+[08:35:31] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:31] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:31] Reinit failed Ч dropping set request
+[08:35:31] No iface Ч attempting reinit
+[08:35:31] CoInitialize OK
+[08:35:31] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:31] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:31] Reinit failed Ч dropping set request
+[08:35:31] No iface Ч attempting reinit
+[08:35:31] CoInitialize OK
+[08:35:31] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:31] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:31] Reinit failed Ч dropping set request
+[08:35:31] No iface Ч attempting reinit
+[08:35:31] CoInitialize OK
+[08:35:31] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:31] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:31] Reinit failed Ч dropping set request
+[08:35:31] No iface Ч attempting reinit
+[08:35:31] CoInitialize OK
+[08:35:31] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:31] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:31] Reinit failed Ч dropping set request
+[08:35:31] No iface Ч attempting reinit
+[08:35:31] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:32] No iface Ч attempting reinit
+[08:35:32] CoInitialize OK
+[08:35:32] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:32] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:32] Reinit failed Ч dropping set request
+[08:35:34] No iface Ч attempting reinit
+[08:35:34] CoInitialize OK
+[08:35:34] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:34] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:34] Reinit failed Ч dropping set request
+[08:35:35] No iface Ч attempting reinit
+[08:35:35] CoInitialize OK
+[08:35:35] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:35] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:35] Reinit failed Ч dropping set request
+[08:35:35] No iface Ч attempting reinit
+[08:35:35] CoInitialize OK
+[08:35:35] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:35] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:35] Reinit failed Ч dropping set request
+[08:35:35] No iface Ч attempting reinit
+[08:35:35] CoInitialize OK
+[08:35:35] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:35] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:35] Reinit failed Ч dropping set request
+[08:35:35] No iface Ч attempting reinit
+[08:35:35] CoInitialize OK
+[08:35:35] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:35] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:35] Reinit failed Ч dropping set request
+[08:35:35] No iface Ч attempting reinit
+[08:35:35] CoInitialize OK
+[08:35:35] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:35] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:35] Reinit failed Ч dropping set request
+[08:35:35] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:36] No iface Ч attempting reinit
+[08:35:36] CoInitialize OK
+[08:35:36] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:36] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:36] Reinit failed Ч dropping set request
+[08:35:38] No iface Ч attempting reinit
+[08:35:39] CoInitialize OK
+[08:35:39] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:39] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:39] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:40] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:40] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:40] Reinit failed Ч dropping set request
+[08:35:40] No iface Ч attempting reinit
+[08:35:40] CoInitialize OK
+[08:35:41] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:41] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:41] Reinit failed Ч dropping set request
+[08:35:41] No iface Ч attempting reinit
+[08:35:41] CoInitialize OK
+[08:35:41] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:41] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:41] Reinit failed Ч dropping set request
+[08:35:41] No iface Ч attempting reinit
+[08:35:41] CoInitialize OK
+[08:35:41] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:41] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:41] Reinit failed Ч dropping set request
+[08:35:41] No iface Ч attempting reinit
+[08:35:41] CoInitialize OK
+[08:35:41] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:41] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:41] Reinit failed Ч dropping set request
+[08:35:41] No iface Ч attempting reinit
+[08:35:41] CoInitialize OK
+[08:35:41] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:35:41] _init_com FAILED: 'AudioDevice' object has no attribute 'Activate'
+[08:35:41] Reinit failed Ч dropping set request
+[08:38:14] VolumeWorker thread started
+[08:38:14] CoInitialize OK
+[08:38:14] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:38:14] device: <POINTER(IMMDevice) ptr=0x190c6daee60 at 190c797c7d0>
+[08:38:14] Activate OK: <POINTER(IUnknown) ptr=0x190c6d4b860 at 190ddfba7d0>
+[08:38:14] QueryInterface OK: <POINTER(IAudioEndpointVolume) ptr=0x190c6d4b860 at 190ddfbabd0>
+[08:38:14] Current volume: 0.2604
+[08:38:14] COM init: ok=True  iface=True
+[08:38:19] SetMasterVolumeLevelScalar(0.0000)
+[08:38:19] Readback after set: 0.0000  (target was 0.0000)
+[08:38:20] SetMasterVolumeLevelScalar(0.0130)
+[08:38:21] Readback after set: 0.0130  (target was 0.0130)
+[08:38:21] SetMasterVolumeLevelScalar(0.0290)
+[08:38:21] Readback after set: 0.0290  (target was 0.0290)
+[08:38:21] SetMasterVolumeLevelScalar(0.0454)
+[08:38:21] Readback after set: 0.0454  (target was 0.0454)
+[08:38:21] SetMasterVolumeLevelScalar(0.0649)
+[08:38:21] Readback after set: 0.0649  (target was 0.0649)
+[08:38:21] SetMasterVolumeLevelScalar(0.0840)
+[08:38:21] Readback after set: 0.0840  (target was 0.0840)
+[08:38:21] SetMasterVolumeLevelScalar(0.1025)
+[08:38:21] Readback after set: 0.1025  (target was 0.1025)
+[08:38:21] SetMasterVolumeLevelScalar(0.1189)
+[08:38:21] Readback after set: 0.1189  (target was 0.1189)
+[08:38:21] SetMasterVolumeLevelScalar(0.1378)
+[08:38:21] Readback after set: 0.1378  (target was 0.1378)
+[08:38:21] SetMasterVolumeLevelScalar(0.1565)
+[08:38:21] Readback after set: 0.1565  (target was 0.1565)
+[08:38:21] SetMasterVolumeLevelScalar(0.1740)
+[08:38:21] Readback after set: 0.1740  (target was 0.1740)
+[08:38:21] SetMasterVolumeLevelScalar(0.1886)
+[08:38:21] Readback after set: 0.1886  (target was 0.1886)
+[08:38:21] SetMasterVolumeLevelScalar(0.2022)
+[08:38:21] Readback after set: 0.2022  (target was 0.2022)
+[08:38:21] SetMasterVolumeLevelScalar(0.2188)
+[08:38:21] Readback after set: 0.2188  (target was 0.2188)
+[08:38:21] SetMasterVolumeLevelScalar(0.2328)
+[08:38:21] Readback after set: 0.2328  (target was 0.2328)
+[08:38:22] SetMasterVolumeLevelScalar(0.2481)
+[08:38:22] Readback after set: 0.2481  (target was 0.2481)
+[08:38:22] SetMasterVolumeLevelScalar(0.2631)
+[08:38:22] Readback after set: 0.2631  (target was 0.2631)
+[08:38:22] SetMasterVolumeLevelScalar(0.2778)
+[08:38:22] Readback after set: 0.2778  (target was 0.2778)
+[08:38:22] SetMasterVolumeLevelScalar(0.2901)
+[08:38:22] Readback after set: 0.2901  (target was 0.2901)
+[08:38:22] SetMasterVolumeLevelScalar(0.3060)
+[08:38:22] Readback after set: 0.3060  (target was 0.3060)
+[08:38:22] SetMasterVolumeLevelScalar(0.3213)
+[08:38:22] Readback after set: 0.3213  (target was 0.3213)
+[08:38:22] SetMasterVolumeLevelScalar(0.3375)
+[08:38:22] Readback after set: 0.3375  (target was 0.3375)
+[08:38:22] SetMasterVolumeLevelScalar(0.3559)
+[08:38:22] Readback after set: 0.3559  (target was 0.3559)
+[08:38:22] SetMasterVolumeLevelScalar(0.3703)
+[08:38:22] Readback after set: 0.3703  (target was 0.3703)
+[08:38:22] SetMasterVolumeLevelScalar(0.3846)
+[08:38:22] Readback after set: 0.3846  (target was 0.3846)
+[08:38:22] SetMasterVolumeLevelScalar(0.4010)
+[08:38:23] Readback after set: 0.4010  (target was 0.4010)
+[08:38:23] SetMasterVolumeLevelScalar(0.4174)
+[08:38:23] Readback after set: 0.4174  (target was 0.4174)
+[08:38:23] SetMasterVolumeLevelScalar(0.4348)
+[08:38:23] Readback after set: 0.4348  (target was 0.4348)
+[08:38:23] SetMasterVolumeLevelScalar(0.4518)
+[08:38:23] Readback after set: 0.4518  (target was 0.4518)
+[08:38:23] SetMasterVolumeLevelScalar(0.4672)
+[08:38:23] Readback after set: 0.4672  (target was 0.4672)
+[08:38:23] SetMasterVolumeLevelScalar(0.4827)
+[08:38:23] Readback after set: 0.4827  (target was 0.4827)
+[08:38:23] SetMasterVolumeLevelScalar(0.4959)
+[08:38:23] Readback after set: 0.4959  (target was 0.4959)
+[08:38:23] SetMasterVolumeLevelScalar(0.5096)
+[08:38:23] Readback after set: 0.5096  (target was 0.5096)
+[08:38:23] SetMasterVolumeLevelScalar(0.5255)
+[08:38:23] Readback after set: 0.5255  (target was 0.5255)
+[08:38:23] SetMasterVolumeLevelScalar(0.5387)
+[08:38:23] Readback after set: 0.5387  (target was 0.5387)
+[08:38:23] SetMasterVolumeLevelScalar(0.5522)
+[08:38:23] Readback after set: 0.5522  (target was 0.5522)
+[08:38:23] SetMasterVolumeLevelScalar(0.5685)
+[08:38:23] Readback after set: 0.5685  (target was 0.5685)
+[08:38:23] SetMasterVolumeLevelScalar(0.5829)
+[08:38:23] Readback after set: 0.5829  (target was 0.5829)
+[08:38:24] SetMasterVolumeLevelScalar(0.5952)
+[08:38:24] Readback after set: 0.5952  (target was 0.5952)
+[08:38:24] SetMasterVolumeLevelScalar(0.6084)
+[08:38:24] Readback after set: 0.6084  (target was 0.6084)
+[08:38:30] SetMasterVolumeLevelScalar(0.0789)
+[08:38:30] Readback after set: 0.0789  (target was 0.0789)
+[08:38:32] SetMasterVolumeLevelScalar(0.0995)
+[08:38:32] Readback after set: 0.0995  (target was 0.0995)
+[08:38:32] SetMasterVolumeLevelScalar(0.1193)
+[08:38:32] Readback after set: 0.1193  (target was 0.1193)
+[08:38:32] SetMasterVolumeLevelScalar(0.1469)
+[08:38:32] Readback after set: 0.1469  (target was 0.1469)
+[08:38:32] SetMasterVolumeLevelScalar(0.1794)
+[08:38:32] Readback after set: 0.1794  (target was 0.1794)
+[08:38:32] SetMasterVolumeLevelScalar(0.2168)
+[08:38:32] Readback after set: 0.2168  (target was 0.2168)
+[08:38:32] SetMasterVolumeLevelScalar(0.2606)
+[08:38:33] Readback after set: 0.2606  (target was 0.2606)
+[08:38:33] SetMasterVolumeLevelScalar(0.3068)
+[08:38:33] Readback after set: 0.3068  (target was 0.3068)
+[08:38:33] SetMasterVolumeLevelScalar(0.4022)
+[08:38:33] Readback after set: 0.4022  (target was 0.4022)
+[08:38:33] SetMasterVolumeLevelScalar(0.4510)
+[08:38:33] Readback after set: 0.4510  (target was 0.4510)
+[08:38:33] SetMasterVolumeLevelScalar(0.4986)
+[08:38:33] Readback after set: 0.4986  (target was 0.4986)
+[08:38:33] SetMasterVolumeLevelScalar(0.5800)
+[08:38:33] Readback after set: 0.5800  (target was 0.5800)
+[08:38:33] SetMasterVolumeLevelScalar(0.6133)
+[08:38:33] Readback after set: 0.6133  (target was 0.6133)
+[08:38:33] SetMasterVolumeLevelScalar(0.6432)
+[08:38:33] Readback after set: 0.6432  (target was 0.6432)
+[08:38:33] SetMasterVolumeLevelScalar(0.6675)
+[08:38:33] Readback after set: 0.6675  (target was 0.6675)
+[08:38:33] SetMasterVolumeLevelScalar(0.6884)
+[08:38:33] Readback after set: 0.6884  (target was 0.6884)
+[08:38:33] SetMasterVolumeLevelScalar(0.7048)
+[08:38:33] Readback after set: 0.7048  (target was 0.7048)
+[08:38:33] SetMasterVolumeLevelScalar(0.7236)
+[08:38:33] Readback after set: 0.7236  (target was 0.7236)
+[08:38:33] SetMasterVolumeLevelScalar(0.7369)
+[08:38:33] Readback after set: 0.7369  (target was 0.7369)
+[08:38:34] SetMasterVolumeLevelScalar(0.7504)
+[08:38:34] Readback after set: 0.7504  (target was 0.7504)
+[08:38:34] SetMasterVolumeLevelScalar(0.7688)
+[08:38:34] Readback after set: 0.7688  (target was 0.7688)
+[08:38:34] SetMasterVolumeLevelScalar(0.7918)
+[08:38:34] Readback after set: 0.7918  (target was 0.7918)
+[08:38:35] SetMasterVolumeLevelScalar(0.0000)
+[08:38:36] Readback after set: 0.0000  (target was 0.0000)
+[08:39:35] SetMasterVolumeLevelScalar(0.1530)
+[08:39:35] Readback after set: 0.1530  (target was 0.1530)
+[08:39:36] SetMasterVolumeLevelScalar(0.3303)
+[08:39:36] Readback after set: 0.3303  (target was 0.3303)
+[08:40:38] VolumeWorker thread started
+[08:40:38] CoInitialize OK
+[08:40:39] GetSpeakers OK: AudioDevice: ƒинамики (Realtek(R) Audio)
+[08:40:39] device: <POINTER(IMMDevice) ptr=0x1418dee6800 at 14191cb0750>
+[08:40:39] Activate OK: <POINTER(IUnknown) ptr=0x14191081730 at 141a830e750>
+[08:40:39] QueryInterface OK: <POINTER(IAudioEndpointVolume) ptr=0x14191081730 at 141a830eb50>
+[08:40:39] Current volume: 0.3303
+[08:40:39] COM init: ok=True  iface=True
