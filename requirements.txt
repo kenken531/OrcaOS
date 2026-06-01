@@ -1,11 +1,17 @@
+# Core TUI
 textual>=0.52.0
+
+# System monitoring
 psutil>=5.9.0
+
+# Gesture / computer vision (Windows: Python 3.11 recommended for mediapipe)
 opencv-python>=4.8.0
 numpy>=1.24.0
+mediapipe==0.10.35   # After install, run: python download_model.py
+
+# Audio
 pyaudio>=0.2.13
-# Volume control (Windows) — pure Python, works on 3.13
+
+# Volume control (Windows only)
 pycaw>=20230407
 comtypes>=1.4.0
-# MediaPipe — works on Python 3.13 (pure ctypes wheel, no ABI dependency)
-# After installing, run: python download_model.py
-mediapipe==0.10.35

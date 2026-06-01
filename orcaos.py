@@ -5,30 +5,28 @@
 ║  python orcaos.py                                         ║
 ╚═══════════════════════════════════════════════════════════╝
 """
-import sys
 import argparse
+import os
+import sys
 import threading
 
 # ── path fix so panels/isr/tasks can import each other ───────────────────────
-import os
 sys.path.insert(0, os.path.dirname(__file__))
 
 # ── Textual ───────────────────────────────────────────────────────────────────
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Input, Static, Label
-from textual.containers import Horizontal, Vertical, Container
 from textual.binding import Binding
+from textual.containers import Horizontal
+from textual.widgets import Footer, Header, Input, Label, Static
 
 # ── OrcaOS internals ─────────────────────────────────────────────────────────
 import state as _state
-from scheduler import OrcaScheduler
-from panels.gesture_panel import GesturePanel
 from panels.audio_panel   import AudioPanel
-from panels.sys_panel     import SysPanel
+from panels.gesture_panel import GesturePanel
 from panels.llm_panel     import LLMPanel
+from panels.sys_panel     import SysPanel
+from scheduler            import OrcaScheduler
 
-
-# ─────────────────────────────────────────────────────────────────────────────
 BANNER = """\
 [bold cyan]
   ██████╗ ██████╗  ██████╗ █████╗  ██████╗ ███████╗
@@ -41,7 +39,6 @@ BANNER = """\
 """
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 class OrcaOS(App):
     """OrcaOS — RTOS-inspired TUI shell."""
 
@@ -75,11 +72,6 @@ class OrcaOS(App):
         width: 2fr;
     }
 
-    #llm-full {
-        width: 1fr;
-        height: 1fr;
-    }
-
     #cmd-row {
         height: 3;
         border-top: solid $primary-darken-3;
@@ -108,18 +100,23 @@ class OrcaOS(App):
     """
 
     BINDINGS = [
-        Binding("ctrl+c", "quit",        "Quit"),
-        Binding("ctrl+l", "clear_llm",   "Clear LLM"),
+        Binding("ctrl+c", "quit",           "Quit"),
+        Binding("ctrl+l", "clear_llm",      "Clear LLM"),
         Binding("ctrl+g", "toggle_gesture", "Toggle Gesture"),
-        Binding("escape", "focus_input", "Focus input"),
+        Binding("escape", "focus_input",    "Focus input"),
     ]
 
-    TITLE    = "OrcaOS v1.0"
+    TITLE     = "OrcaOS v1.0"
     SUB_TITLE = "BUILDCORED ORCAS · Day 30 Capstone"
 
     # ── lifecycle ─────────────────────────────────────────────────────────────
-    def __init__(self, no_gesture: bool = False, no_audio: bool = False,
-                 camera_index: int = 0, **kwargs):
+    def __init__(
+        self,
+        no_gesture: bool = False,
+        no_audio:   bool = False,
+        camera_index: int = 0,
+        **kwargs,
+    ) -> None:
         super().__init__(**kwargs)
         self.no_gesture   = no_gesture
         self.no_audio     = no_audio
@@ -147,7 +144,6 @@ class OrcaOS(App):
     # ── compose ───────────────────────────────────────────────────────────────
     def compose(self) -> ComposeResult:
         yield Header(show_clock=True)
-
         yield Static(BANNER, id="banner", markup=True)
 
         with Horizontal(id="top-row"):
@@ -166,8 +162,7 @@ class OrcaOS(App):
         yield Footer()
 
     # ── mount: start ISRs ─────────────────────────────────────────────────────
-    def on_mount(self):
-        # always-on ISRs
+    def on_mount(self) -> None:
         import isr.sys_isr as sys_isr
         self._isr_threads.append(sys_isr.start(self._stop))
 
@@ -183,55 +178,56 @@ class OrcaOS(App):
         else:
             _state.update_state(gesture_active=False)
 
-        # scheduler tick every 50 ms
         self.set_interval(0.05, self._scheduler.tick)
-
-        # status bar update every second
-        self.set_interval(1.0, self._update_status)
-
+        self.set_interval(1.0,  self._update_status)
         self.query_one("#cmd-input").focus()
 
     # ── status bar ────────────────────────────────────────────────────────────
-    def _update_status(self):
-        g  = "G:[green]ON[/green]"  if _state.read_state("gesture_active") else "G:[red]OFF[/red]"
-        a  = "A:[green]ON[/green]"  if _state.read_state("audio_active")   else "A:[red]OFF[/red]"
+    def _update_status(self) -> None:
+        g     = "G:[green]ON[/green]"  if _state.read_state("gesture_active") else "G:[red]OFF[/red]"
+        a     = "A:[green]ON[/green]"  if _state.read_state("audio_active")   else "A:[red]OFF[/red]"
         llm_s = "[yellow]LLM:thinking[/yellow]" if _state.read_state("llm_thinking") else "LLM:[green]ready[/green]"
-        cpu = _state.read_state("cpu_percent", 0.0)
-        up  = _state.read_state("uptime_s", 0)
-        h, r = divmod(up, 3600); m, s = divmod(r, 60)
-        bar = f"  {g}  {a}  {llm_s}  │  CPU {cpu:.0f}%  │  UP {h:02d}:{m:02d}:{s:02d}  │  threads: {threading.active_count()}"
+        cpu   = _state.read_state("cpu_percent", 0.0)
+        up    = _state.read_state("uptime_s", 0)
+        h, r  = divmod(up, 3600)
+        m, s  = divmod(r, 60)
+        bar   = (
+            f"  {g}  {a}  {llm_s}"
+            f"  │  CPU {cpu:.0f}%"
+            f"  │  UP {h:02d}:{m:02d}:{s:02d}"
+            f"  │  threads: {threading.active_count()}"
+        )
         self.query_one("#status-bar", Static).update(bar)
 
     # ── input handling ────────────────────────────────────────────────────────
-    def on_input_submitted(self, event: Input.Submitted):
+    def on_input_submitted(self, event: Input.Submitted) -> None:
         prompt = event.value.strip()
         if not prompt:
             return
         event.input.clear()
 
-        # built-in commands
-        if prompt.lower() in ("exit", "quit", "q"):
+        lower = prompt.lower()
+        if lower in ("exit", "quit", "q"):
             self.action_quit()
             return
-        if prompt.lower() == "clear":
+        if lower == "clear":
             self.action_clear_llm()
             return
-        if prompt.lower() == "status":
+        if lower == "status":
             self._push_status_to_llm()
             return
-        if prompt.lower().startswith("model "):
+        if lower.startswith("model "):
             model = prompt.split(None, 1)[1]
             self._run_llm(prompt=f"Hello, confirm you are {model} in one sentence.", model=model)
             return
 
-        # default → send to LLM
         self._run_llm(prompt)
 
-    def _run_llm(self, prompt: str, model: str | None = None):
+    def _run_llm(self, prompt: str, model: str | None = None) -> None:
         from tasks.llm_task import run_prompt
         run_prompt(prompt, model=model)
 
-    def _push_status_to_llm(self):
+    def _push_status_to_llm(self) -> None:
         cpu = _state.read_state("cpu_percent", 0)
         ram = _state.read_state("ram_percent", 0)
         g   = _state.read_state("gesture_label", "—")
@@ -241,39 +237,38 @@ class OrcaOS(App):
         )
 
     # ── actions ───────────────────────────────────────────────────────────────
-    def action_clear_llm(self):
+    def action_clear_llm(self) -> None:
         self.llm_panel.clear()
 
-    def action_toggle_gesture(self):
-        # just shows current state in LLM panel — full restart out of scope
+    def action_toggle_gesture(self) -> None:
         active = _state.read_state("gesture_active", False)
         self.llm_panel.append_token(
             f"\n[dim][gesture ISR is {'active' if active else 'offline'}][/dim]\n"
         )
 
-    def action_focus_input(self):
+    def action_focus_input(self) -> None:
         self.query_one("#cmd-input").focus()
 
     # ── shutdown ──────────────────────────────────────────────────────────────
-    def on_unmount(self):
+    def on_unmount(self) -> None:
         self._stop.set()
         for t in self._isr_threads:
             t.join(timeout=2.0)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description="OrcaOS — BUILDCORED ORCAS Day 30")
     parser.add_argument("--no-gesture", action="store_true", help="Disable GestureISR (no webcam needed)")
     parser.add_argument("--no-audio",   action="store_true", help="Disable AudioISR  (no mic needed)")
     parser.add_argument("--headless",   action="store_true", help="No-hardware mode  (implies both above)")
-    parser.add_argument("--camera",     type=int, default=0,  help="Camera index to use (default 0). Try 1 or 2 if 0 fails.")
+    parser.add_argument("--camera",     type=int, default=0,  help="Camera index to use (default 0)")
     args = parser.parse_args()
 
-    no_gesture = args.no_gesture or args.headless
-    no_audio   = args.no_audio   or args.headless
-
-    app = OrcaOS(no_gesture=no_gesture, no_audio=no_audio, camera_index=args.camera)
+    app = OrcaOS(
+        no_gesture   = args.no_gesture or args.headless,
+        no_audio     = args.no_audio   or args.headless,
+        camera_index = args.camera,
+    )
     app.run()
 
 

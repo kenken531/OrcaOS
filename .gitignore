@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# OrcaOS runtime artefacts
+volume_worker.log
+*.log
+hand_landmarker.task
+
+# IDE
+.vscode/
+.idea/
+*.swp
