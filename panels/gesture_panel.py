@@ -1,7 +1,7 @@
 """OrcaOS — GesturePanel"""
-from textual.widget import Widget
-from textual.reactive import reactive
 from textual.app import ComposeResult
+from textual.reactive import reactive
+from textual.widget import Widget
 from textual.widgets import Static
 
 GESTURE_ART = {
@@ -15,18 +15,18 @@ GESTURE_ART = {
     "NONE":      "·",
 }
 
+
 def _bar(value: float, width: int = 10) -> str:
     level = min(int(value * width), width)
     return "█" * level + "░" * (width - level)
+
 
 def _vol_bar(volume: float, width: int = 14) -> str:
     if volume < 0:
         return "░" * width + " N/A"
     level = min(int(volume * width), width)
     color = "green" if volume < 0.6 else ("yellow" if volume < 0.85 else "red")
-    filled = "█" * level
-    empty  = "░" * (width - level)
-    return f"[{color}]{filled}[/{color}]{empty} {volume*100:3.0f}%"
+    return f"[{color}]{'█' * level}[/{color}]{'░' * (width - level)} {volume * 100:3.0f}%"
 
 
 class GesturePanel(Widget):
@@ -43,7 +43,7 @@ class GesturePanel(Widget):
     fps         = reactive(0.0)
     active      = reactive(False)
     error       = reactive("")
-    open_log    = reactive([])
+    open_log    = reactive(list)   # use factory to avoid shared mutable default
     cam_idx     = reactive(-1)
     backend     = reactive("")
     volume      = reactive(-1.0)
@@ -55,7 +55,6 @@ class GesturePanel(Widget):
 
     def _render_content(self) -> str:
         if self.active:
-            # backend badge
             if "MediaPipe" in self.backend:
                 be = "[green]MediaPipe[/green]"
             elif self.backend:
@@ -66,17 +65,13 @@ class GesturePanel(Widget):
             emoji = GESTURE_ART.get(self.label, "·")
             bar   = _bar(self.value)
 
-            # Volume bar — green if working, dim if unavailable
             if self.volume >= 0:
-                vbar = _vol_bar(self.volume)
-                vol_line = f"  VOL  {vbar}"
+                vol_line = f"  VOL  {_vol_bar(self.volume)}"
             else:
                 vol_line = "  VOL  [dim]install: pip install pycaw comtypes[/dim]"
 
-            # Hand Y position indicator (shows tracking is working)
             if self.label == "FIST":
-                from tasks.gesture_actions import _y_to_volume, _Y_TOP, _Y_BOTTOM
-                hint     = "[cyan]raise/lower fist to set volume[/cyan]"
+                hint = "[cyan]raise/lower fist to set volume[/cyan]"
             elif self.label == "PINCH":
                 hint = "[yellow]hold 1.5s to lock 🔒[/yellow]"
             else:
@@ -93,7 +88,6 @@ class GesturePanel(Widget):
             ]
             if self.last_action:
                 lines.append(f"  [dim]{self.last_action[-40:]}[/dim]")
-
         else:
             err      = (self.error or "camera not opened")[:40]
             log_tail = self.open_log[-2:] if self.open_log else []
@@ -111,10 +105,10 @@ class GesturePanel(Widget):
             ]
         return "\n".join(lines)
 
-    def on_mount(self):
+    def on_mount(self) -> None:
         self._refresh()
 
-    def _refresh(self):
+    def _refresh(self) -> None:
         self.query_one("#gesture-content", Static).update(self._render_content())
 
     def watch_label(self, _):       self._refresh()

@@ -1,9 +1,8 @@
 """OrcaOS — LLMPanel"""
-from textual.widget import Widget
-from textual.reactive import reactive
 from textual.app import ComposeResult
+from textual.reactive import reactive
+from textual.widget import Widget
 from textual.widgets import Static
-
 
 SPINNER = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
 
@@ -28,22 +27,22 @@ class LLMPanel(Widget):
         yield Static(id="llm-header")
         yield Static(id="llm-body")
 
-    def on_mount(self):
+    def on_mount(self) -> None:
         self._refresh_header()
         self._refresh_body()
 
     # ── public API called by scheduler ───────────────────────────────────────
-    def append_token(self, text: str):
+    def append_token(self, text: str) -> None:
         self.response_buf += text
         self._refresh_body()
 
-    def clear(self):
+    def clear(self) -> None:
         self.response_buf = ""
         self._refresh_body()
 
     # ── rendering ─────────────────────────────────────────────────────────────
-    def _refresh_header(self):
-        spin = SPINNER[self.spin_idx % len(SPINNER)] if self.thinking else "✓"
+    def _refresh_header(self) -> None:
+        spin   = SPINNER[self.spin_idx % len(SPINNER)] if self.thinking else "✓"
         status = (
             f"[yellow]{spin} thinking…[/yellow]"
             if self.thinking
@@ -56,7 +55,7 @@ class LLMPanel(Widget):
         )
         self.query_one("#llm-header", Static).update(header)
 
-    def _refresh_body(self):
+    def _refresh_body(self) -> None:
         text = self.response_buf or "[dim]  orca> waiting for prompt…[/dim]"
         self.query_one("#llm-body", Static).update(text)
 

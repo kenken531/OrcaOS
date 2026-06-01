@@ -1,9 +1,10 @@
 """OrcaOS — SysPanel"""
-from textual.widget import Widget
-from textual.reactive import reactive
-from textual.app import ComposeResult
-from textual.widgets import Static
 import platform
+
+from textual.app import ComposeResult
+from textual.reactive import reactive
+from textual.widget import Widget
+from textual.widgets import Static
 
 
 def _bar(val: float, width: int = 14) -> str:
@@ -31,12 +32,14 @@ class SysPanel(Widget):
     ram    = reactive(0.0)
     uptime = reactive(0)
 
+    # Cached at class level — these never change at runtime
+    _OS_NAME = platform.system()
+    _NODE    = platform.node()[:12]
+
     def compose(self) -> ComposeResult:
         yield Static(id="sys-content")
 
     def _render_content(self) -> str:
-        os_name = platform.system()
-        node    = platform.node()[:12]
         lines = [
             " [bold cyan]SYSTEM[/bold cyan]           [green]● LIVE[/green]",
             "",
@@ -44,15 +47,15 @@ class SysPanel(Widget):
             f"  RAM  {_bar(self.ram)}  {self.ram:5.1f}%",
             f"  UP   {_fmt_uptime(self.uptime)}",
             "",
-            f"  [dim]{os_name} · {node}[/dim]",
+            f"  [dim]{self._OS_NAME} · {self._NODE}[/dim]",
             "  [dim]psutil · SysISR[/dim]",
         ]
         return "\n".join(lines)
 
-    def on_mount(self):
+    def on_mount(self) -> None:
         self._refresh()
 
-    def _refresh(self):
+    def _refresh(self) -> None:
         self.query_one("#sys-content", Static).update(self._render_content())
 
     def watch_cpu(self, _):    self._refresh()
